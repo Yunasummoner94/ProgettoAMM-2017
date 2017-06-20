@@ -1,0 +1,308 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-apr-2017, 18.59.40
+    Author     : sarav
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-mar-2017, 18.09.57
+    Author     : sarav
+*/
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+header #title {
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+}
+
+nav {
+    border: hidden;
+    display: inline-block; 
+}
+
+nav li { 
+
+    border: hidden;
+    border-collapse: collapse;
+    padding: 0px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+nav li:hover {
+    color: #FFFFFF;
+    border-bottom: 1px solid gray;
+
+}
+
+.post {
+    margin: 4%;
+    background-color: rgba(255,255,255,0.7);
+    padding: 1%;
+    border: solid 1px #DBDCDD;
+    border-radius: 5px;
+
+}
+
+.nomeutente {
+    background-position: center left;
+    padding-left: 40px;
+    padding-top: 1px;
+}
+
+#posts {
+
+    padding-left: 20%;
+    padding-right: 30%;
+    margin-top: 0px;
+}
+
+#left_sidebar {
+    clear: left;
+    width: 20%;
+    float: left;
+    height: 100%;
+    padding-left: 2%;
+    margin-top: 2%;
+}
+
+#left_sidebar h1, h2, h3 {
+    color: #000000;
+}
+
+#left_sidebar h4 {
+    font-size: 14px;
+}
+
+#persone {
+    margin-bottom: 50px;
+}
+
+#persone a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+#persone a:hover {
+    text-decoration: underline;
+}
+
+#gruppi a{
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+#gruppi a:hover{
+    text-decoration: underline;
+}
+
+#header #logout {
+    float: right;
+    width: 20%;
+    margin-top: -50px;
+    display: inline;
+}
+
+#header #logoutarea {
+    float: right;
+    width: 20%;
+    position: relative;
+    margin-top: -75px;
+    display: inline;
+    clear: left;
+
+}
+
+#header .logouts {
+    text-align: center; 
+    margin-top: 88px; 
+}
+#header h4.logouts  {
+    color: #000000;
+    font-size: 14px;
+}
+
+#header .logouts a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#header .logouts a:hover {
+    text-decoration: underline;
+}
+
+p,h1,h2,h3,label,input,textarea, a:link, a:visited, a:hover, a:active {
+    font-family: "Exo 2 light", Times, serif;
+}
+
+body {
+    background-color: #FFF2E7;
+    position: relative;
+}
+
+p {
+    color: #481C1C;
+}
+
+h1 {
+    color: #481C1C;
+}
+
+h2 {
+    color: #C26363;
+}
+
+h3 {
+    color: #C26363;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #C26363;
+}
+
+a:hover {
+    color: #481C1C;
+}
+
+a:active {
+    color: lightslategray;
+}
+
+form {
+    margin-right: 400px;
+    width: 300px;
+    background-color: #C26363;
+    padding-top: 10px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+label,input {
+    display: block;
+    width: 148px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+label,input, textaera {
+    color: #481C1C; 
+    float: left; 
+    font-size: 12px;
+    margin: 10px 0; 
+}
+
+textarea { 
+    background: #FFF2E7; 
+    border: 1px solid #323232; 
+    color: #481C1C; 
+    height: 70px; 
+    line-height: 30px; 
+    width: 300px;
+    padding: 0 10px; 
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+input { 
+    background: #FFF2E7; 
+    border: 1px solid #323232;
+    color: #481C1C; 
+    height: 30px; 
+    line-height: 30px; 
+    width: 300px; 
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label {
+    text-align: left;
+    width: 300px;
+    height: 10px;
+    padding-right: 20px;
+}
+
+input[type=submit]:hover {
+    background-color:lightslategrey;
+}
+
+br {
+    clear: left;
+}
+
+/*Immagini */
+
+#gruppi .nome_gruppo {
+    padding-left: 25px;
+}
+
+#gruppi .title {
+    background-image: url('../Immagini/gruppi.png');
+    background-repeat: no-repeat;
+    background-position: 80px;
+}
+
+#gruppi .nome_gruppo#paperelle {
+    background-image: url('../Immagini/paperelle.png');
+    background-repeat: no-repeat;
+}
+
+#gruppi .nome_gruppo#disagiati {
+    background-image: url('../Immagini/disagiati.png');
+    background-repeat: no-repeat;
+}
+
+#gruppi .nome_gruppo#festa {
+    background-image: url('../Immagini/laurea.png');
+    background-repeat: no-repeat;
+}
+
+#persone .nome_utente {
+    padding-left: 25px;
+}
+
+#persone .nome_utente#pollynomio {
+    background-image: url('../Immagini/icona.png');
+    background-repeat: no-repeat;
+}
+
+#persone .nome_utente#jonsnow {
+    background-image: url('../Immagini/icona.png');
+    background-repeat: no-repeat;
+}
+
+#persone .nome_utente#polemistamisterioso {
+    background-image: url('../Immagini/icona.png');
+    background-repeat: no-repeat;
+}
