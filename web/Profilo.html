@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head> 
+        <title>Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sara Valeria Scardigli">
+        <meta name="keywords" content="profilo">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    <body>
+        <div id="header">
+            <div id="title">
+                <h1>NerdBook</h1>
+            </div>
+             <nav>
+                <ul>
+                    <li><a href="Descrizione.html">Vai alla descrizione</a></li>
+                    <li><a href="Login.html">Vai al login</a></li>
+                    <li><a href="Bacheca.html">Vai alla bacheca</a></li> 
+                </ul>
+            </nav>
+
+            <div id="logoutarea"> 
+                <h4 class="logouts"><a href="#"><img title="icona" alt="icona" src="Immagini/icona.png">Logout</a></h4>
+            </div>
+
+            <div id="left_sidebar">
+                
+                <div id="persone">
+                    <h3 class="title">Persone</h3>
+                    <h4 class="nome_utente" id="pollynomio"><a href="#">Polly Nomio</a></h4>
+                    <h4 class="nome_utente" id="jonsnow"><a href="#">Jon Snow</a></h4>
+                    <h4 class="nome_utente" id="polemistamisterioso"><a href="#">Polemista misterioso</a></h4>
+                </div>  
+
+                <div id="gruppi">
+                    <h3 class="title">Gruppi</h3>
+                    <h4 class="nome_gruppo" id="paperelle"><a href="#">Paperelle</a></h4>
+                    <h4 class="nome_gruppo" id="disagiati"><a href="#">Disagiati</a></h4>
+                    <h4 class="nome_gruppo" id="festa"><a href="#">Festa di Laurea</a></h4>
+                </div>        
+            </div>
+        </div>
+        <form action="pagina.php" method="post">
+                <label for="nomeutente">Nome utente</label>
+                <input type="text" name="nomeutente"
+                id="nomeutente" value="inserire nome" />
+                <br>
+                <label for="cognomeutente">Cognome utente</label>
+                <input type="text" name="cognomeutente"
+                id="cognomeutente" value="inserire cognome" />
+                <br>
+                <label for="immagineprofilo">Immagine profilo</label>
+                <input type="url" name="immagineprofilo"
+                       id="immagineprofilo" value=""/>
+                <br>
+                <label for="presentazione">Frase di presentazione</label>
+                <textarea rows="4" cols="22"
+                         name="presentazione" id="presentazione" >
+                         inserire frase di presentazione
+                </textarea>
+                <br>
+                <label for="datanascita">Data di nascita</label>
+                <input type="date" name="bday" max="2006-12-31"
+                       id="datanascita" value="" />
+                <br>
+                <label for="pswd">Password</label>
+                <input type="password" name="pswd"
+                id="pswd" value="oscurato" />
+                <br>
+                <label for="confermapassword">Conferma password</label>
+                <input type="password" name="pswd"
+                id="confermapassword" value="oscurato" />
+                <br>
+                
+                <input type="submit" value="Invio">
+        </form>
+        <br>
+    </body>
+</html>
