@@ -34,32 +34,16 @@ and open the template in the editor.
         </div>
 
         <div id="posts">
-            <div class="post">
-                <h2 class="nomeutente">Polly Nomio</h2>
-                <img title="profilo" alt="Polly Nomio"
-                        src="Immagini/pollynomio.jpg" width="50" height="50">
-                <p>
-                    Anche oggi ho preso un 30, il venticinquesimo della mia carriera!
-                </p>
-            </div>
-            <div class="post">
-                <h2 class="nomeutente">Jon Snow</h2>
-                <img title="profilo2" alt="Jon Snow"
-                        src="Immagini/jonsnow.png" width="50" height="50">
-                <br>
-                 <img title="allegato" alt="Jon Snow Baba"
-                        src="Immagini/jonsnowbaba.jpg" width="150" height="150">
-
-            </div>
-            <div class="post">
-                <h2 class="nomeutente">Polemista Misterioso</h2>
-                <img title="profilo3" alt="Polemista misterioso"
-                        src="Immagini/illuminati.jpg" width="50" height="50">
-                <br>
-                <a href="http://ilfalzoquotidiano.com/matteo-renzi-ritratta-non-conoscevo-mio-padre/"> 
-                          A A A - Matteo Renzi ritratta: non conoscevo mio padre - CLIKKA QUI
-                      </a>
-            </div>
+                <c:forEach var="post" items="${posts}">
+                    <div class="post">
+                        <c:if test="${post.postType == 'TEXT'}">
+                             <p>${post.content}</p>
+                        </c:if>
+                        <c:if test="${post.postType == 'IMAGE'}">
+                            <img alt="Post con foto" src="${post.content}">
+                        </c:if>
+                    </div>
+                </c:forEach>
             <br><br><br>
         </div>
         
